@@ -9,10 +9,8 @@ led.c contains the code to initialize the LED and make it blink. Delay function 
 Below GIF shows how the routine we wrote acts out. After flashing the code onto the board, RESET button needs to be pressed to start the execution.
 
 <p align="center">
-  <img src="gif.gif" width="200"/>
+  <img src="led_gif.gif" width="400"/>
 </p>
-
-![Toggling User LED](gif.gif)
 
 
 
