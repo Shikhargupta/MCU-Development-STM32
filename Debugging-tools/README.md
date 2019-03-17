@@ -16,7 +16,13 @@ SRAM starts from - 0x2000 0000
 ### Caveats
 
 - function stack will consume SRAM only during runtime.
-- constant data structures will consume flash memory.
+- constant data (read only) structures will consume flash memory.
 - global variables will use SRAM apart from runtime.
 - data is stored in little endian format in memory.
 
+
+### Copying flash contents to SRAM.
+
+![This file](copy_flash_to_sram) consists of a program which copies the contents from Flash to SRAM. We have defined a global constant character array (flash_data). Since it is constant (read-only) it will be stored in flash memory. Same can be verified by using the watch window to determine the address location of variable flash_data. Next, we start from the base address of the SRAM memory and start copying the data from flash byte-by-byte. To ensure SRAM base address is incremented by a byte, it is typecasted as uint8_t.
+
+ 
