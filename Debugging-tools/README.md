@@ -13,7 +13,7 @@ Flash memory starts from - 0x0800 0000
 SRAM starts from - 0x2000 0000
 
 
-###Caveats
+### Caveats
 
 - function stack will consume SRAM only during runtime.
 - constant data structures will consume flash memory.
