@@ -23,6 +23,6 @@ SRAM starts from - 0x2000 0000
 
 ### Copying flash contents to SRAM.
 
-![This file](copy_flash_to_sram) consists of a program which copies the contents from Flash to SRAM. We have defined a global constant character array (flash_data). Since it is constant (read-only) it will be stored in flash memory. Same can be verified by using the watch window to determine the address location of variable flash_data. Next, we start from the base address of the SRAM memory and start copying the data from flash byte-by-byte. To ensure SRAM base address is incremented by a byte, it is typecasted as uint8_t.
+![This file](copy_flash_to_sram.cpp) consists of a program which copies the contents from Flash to SRAM. We have defined a global constant character array (flash_data). Since it is constant (read-only) it will be stored in flash memory. Same can be verified by using the watch window to determine the address location of variable flash_data. Next, we start from the base address of the SRAM memory and start copying the data from flash byte-by-byte. To ensure SRAM base address is incremented by a byte, it is typecasted as uint8_t.
 
  
