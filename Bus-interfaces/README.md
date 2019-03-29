@@ -7,7 +7,7 @@
 
 
 
-Buses
+## Buses
 
 I-bus
 Used to fetch instruction codes from the memory range - 0x00000000 to 0x1FFFFFFC. Operations are performed over the 32-bit AHB-Lite bus.
